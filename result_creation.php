@@ -33,7 +33,7 @@
         $password ="'". $password ."'"; 
 
         $user = "root";
-        $pass = "";
+        $pass = "root";
 
         try {
             $dbh = new PDO('mysql:host=localhost;dbname=projetweb', $user, $pass);

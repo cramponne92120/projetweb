@@ -17,15 +17,15 @@
         </ul>   
     </div>
     <div id="form">
-        <form method="get" action="check_auth.php">
+        <form method="post" action="check_auth.php">
             <div id="form-div">
-                <label for="login">login:</label>
-                <input type="text" name="login" required>
+                <label for="identifiant">Identifiant:</label>
+                <input type="text" name="identifiant" required>
             </div>
             
             <div id="form-div">
-                <label for="password">password:</label>
-                <input type="text" name="password" required>
+                <label for="password">Mot de passe:</label>
+                <input type="password" name="password" required>
             </div>
             
 
