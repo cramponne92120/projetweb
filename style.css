@@ -135,6 +135,9 @@ body
 #form-div
 {
 	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+
 }
 
 #activity:hover
@@ -148,4 +151,8 @@ footer
 	text-align: center;
 	color: white;
 	position: absolute;
+}
+
+#toCenter{
+	width: 20rem;
 }

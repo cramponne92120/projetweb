@@ -17,7 +17,7 @@
         </ul>   
     </div>
     <div id="form">
-        <form method="post" action="check_auth.php">
+        <form method="post" action="check_auth.php" id="toCenter">
             <div id="form-div">
                 <label for="identifiant">Identifiant:</label>
                 <input type="text" name="identifiant" required>
