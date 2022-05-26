@@ -99,15 +99,13 @@ h2
 body
 {
 	background-image: url("background.jpg");
-	background-size: 100% 150%;
+	background-size: 100% 170%;
 }
 
 footer
 {
 	margin-top: 42%;
-	margin-right: -20%;
 	text-align: center;
 	color: white;
-	float: right;
 	position: absolute;
 }
