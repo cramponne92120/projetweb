@@ -17,7 +17,42 @@
         </ul>   
     </div>
     <div id="form">
-         <p> formulaire </p>
+        <form method="POST" action="result_creation.php">
+            <div id="form-div">
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" required>
+            </div>
+            
+            <div id="form-div">
+                <label for="prenom">Prénom:</label>
+                <input type="text" name="prenom" required>
+            </div>
+            
+            <div id="form-div">
+                <label for="identifiant">Identifiant:</label>
+                <input type="text" name="identifiant" required>
+            </div>
+
+            <div id="form-div">
+                <label for="sexe">Sexe:</label>
+                    <input type="radio" value="M" id="masculin" name="sexe" checked>
+                    <label for="masculin">Masculin</label>
+                    <input type="radio" value="F" id="feminin" name="sexe">
+                    <label for="feminin">Feminin</label>
+            </div>
+
+            <div id="form-div">
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+            </div>
+
+            <div id="form-div">
+                <label for="password">Mot de passe:</label>
+                <input type="password" name="password" required>
+            </div>
+
+            <input type="submit" value="Confirmer" id="form-div">
+        </form>
     </div>
 </body>
 <footer>
