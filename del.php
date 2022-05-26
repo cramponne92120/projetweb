@@ -18,11 +18,12 @@
     </div>
     <div id="form">
     <?php
-        $contenu = $_POST["sup"];
+        $contenu = $_POST['activite'];
         $contenu ="'". $contenu ."'";
         $id = $_POST["data"];
+        echo "$id";
         $idUtilisateur = $id;
-        $id ="'". $id ."'";
+        #$id ="'". $id ."'";
 
         $user = "root";
         $pass = "root";
@@ -33,7 +34,7 @@
             $res = $dbh->query($sql);
             echo "Activitée supprimée avec succès";
             $dbh = null;
-
+            echo "$idUtilisateur";
             echo "<a href=\"activite.php?idUtilisateur=$idUtilisateur\"> <div id=\"activity\"> <p> Acceder à mes activitées </p> </div> </a>";
 
         } catch (PDOException $e) {

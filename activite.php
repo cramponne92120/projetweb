@@ -29,24 +29,23 @@
                 <input type=\"submit\" name=\"add\" value=\"Ajouter une activitée\" style=\"width: 50%;\"/>
             </form>
         
-            <form action=\"del.php\" method=\"post\">
-                <input type=\"hidden\" name=\"data\" value=\"$id\">
-                <input type=\"text\" name=\"sup\" >
-                <input type=\"submit\" name=\"del\" value=\"Supprimer une activitée\" style=\"width: 50%;\"/>
-            </form>
+            
         </div>
         &nbsp;
         &nbsp;
         &nbsp;";
 
 
-            
+            $idUtilisateur = $id;
             $id ="'". $id ."'";
             $user = "root";
             $pass = "root";
             try {
                 $dbh = new PDO('mysql:host=localhost;dbname=projetweb', $user, $pass);
                 $res = $dbh->query("SELECT contenu FROM Activite WHERE idUtilisateur = $id");
+                echo "<form action=\"del.php\" method=\"post\">";
+                echo "<input type=\"hidden\" name=\"data\" value=\"$idUtilisateur\">";
+                
                 
                 echo "<select name=\"activite\" id=\"act\">";
                 while ($row = $res->fetch()) {
@@ -55,8 +54,9 @@
 
                 }
                 
-                echo "</select>";
-
+                echo "</select> <br>";
+                echo "<input type=\"submit\" name=\"del\" value=\"Supprimer une activitée\" style=\"width: 100%;\"/>";
+                echo "</form>";
 
                 $dbh = null;
                 
