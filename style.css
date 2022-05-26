@@ -102,6 +102,19 @@ body
 	background-size: 100% 200%;
 }
 
+#form
+{
+	margin-top: 10%;
+	margin-left: 25%;
+	margin-right: 25%;
+	width: 50%;
+	height: 30rem;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 footer
 {
 	margin-top: 42%;
