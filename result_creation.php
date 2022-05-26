@@ -37,7 +37,7 @@
 
         try {
             $dbh = new PDO('mysql:host=localhost;dbname=projetweb', $user, $pass);
-            $sql = "INSERT INTO utilisateur VALUES (DEFAULT,$nom,$prenom,$id,$sexe,$email,$password)";
+            $sql = "INSERT INTO Utilisateur VALUES (DEFAULT,$nom,$prenom,$id,$sexe,$email,$password)";
             $res = $dbh->query($sql);
             echo "member successfully added";
             $dbh = null;

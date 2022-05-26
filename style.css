@@ -113,11 +113,18 @@ body
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	opacity: 0.9;
+	border-radius: 5%;
 }
 
 #form-div
 {
 	margin-top: 20px;
+}
+
+#activity:hover
+{
+	background-color: #dadada;
 }
 
 footer
