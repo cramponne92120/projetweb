@@ -17,24 +17,30 @@
         </ul>   
     </div>
     <div id="form">
-        <div>
-            <form action="add.php" method="post">
-                <input type="text" name="ajout" >
-                <input type="submit" name="add" value="Ajouter une activitée" style="width: 50%;"/>
+    
+       <?php
+
+            $id = $_GET["idUtilisateur"];
+
+            echo " <div>
+            <form action=\"add.php\" method=\"post\">
+                <input type=\"hidden\" name=\"$id\">
+                <input type=\"text\" name=\"ajout\" >
+                <input type=\"submit\" name=\"add\" value=\"Ajouter une activitée\" style=\"width: 50%;\"/>
             </form>
         
             <form action="del.php">
-                <input type="text" name="sup" >
-                <input type="submit" name="del" value="Supprimer une activitée" style="width: 50%;"/>
+                <input type=\"hidden\" name=\"$id\">
+                <input type=\"text\" name=\"sup\" >
+                <input type=\"submit\" name=\"del\" value=\"Supprimer une activitée\" style=\"width: 50%;\"/>
             </form>
         </div>
         &nbsp;
         &nbsp;
-        &nbsp;
+        &nbsp;";
 
-       <?php
-       
-            $id = $_GET["idUtilisateur"];
+
+            
             $id ="'". $id ."'";
             $user = "root";
             $pass = "root";
