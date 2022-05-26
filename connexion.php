@@ -17,7 +17,20 @@
         </ul>   
     </div>
     <div id="form">
-         <p> formulaire </p>
+        <form method="get" action="check_auth.php">
+            <div id="form-div">
+                <label for="login">login:</label>
+                <input type="text" name="login" required>
+            </div>
+            
+            <div id="form-div">
+                <label for="password">password:</label>
+                <input type="text" name="password" required>
+            </div>
+            
+
+            <input type="submit" value="Confirmer" id="form-div">
+        </form>
     </div>
 </body>
 <footer>

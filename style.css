@@ -115,6 +115,11 @@ body
 	align-items: center;
 }
 
+#form-div
+{
+	margin-top: 20px;
+}
+
 footer
 {
 	margin-top: 42%;
