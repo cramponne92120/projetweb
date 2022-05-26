@@ -20,7 +20,7 @@
     <?php
         $contenu = $_POST["ajout"];
         $contenu ="'". $contenu ."'";
-        $id = $_POST[""];
+        $id = $_POST["data"];
         $idUtilisateur = $id;
         $id ="'". $id ."'";
 
@@ -31,7 +31,9 @@
             $dbh = new PDO('mysql:host=localhost;dbname=projetweb', $user, $pass);
             $sql = "INSERT INTO Activite VALUES (DEFAULT,$id,DEFAULT,$contenu)";
             $res = $dbh->query($sql);
-            echo "member successfully added";
+            echo "$contenu";
+            echo "$id";
+            echo "Activitée ajoutée avec succès";
             $dbh = null;
 
             echo "<a href=\"activite.php?idUtilisateur=$idUtilisateur\"> <div id=\"activity\"> <p> Acceder à mes activitées </p> </div> </a>";

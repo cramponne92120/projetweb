@@ -18,9 +18,9 @@
     </div>
     <div id="form">
     <?php
-        $contenu = $_POST["ajout"];
+        $contenu = $_POST["sup"];
         $contenu ="'". $contenu ."'";
-        $id = $_POST[""];
+        $id = $_POST["data"];
         $idUtilisateur = $id;
         $id ="'". $id ."'";
 
@@ -31,7 +31,7 @@
             $dbh = new PDO('mysql:host=localhost;dbname=projetweb', $user, $pass);
             $sql = "DELETE FROM Activite WHERE contenu = $contenu";
             $res = $dbh->query($sql);
-            echo "member successfully removed";
+            echo "Activitée supprimée avec succès";
             $dbh = null;
 
             echo "<a href=\"activite.php?idUtilisateur=$idUtilisateur\"> <div id=\"activity\"> <p> Acceder à mes activitées </p> </div> </a>";
